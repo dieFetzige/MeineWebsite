@@ -1,0 +1,119 @@
+/* Grundfarben und Schriftarten */
+:root {
+    --primary-color: #fff5d1;
+    --secondary-color: #a2331b;
+    --font-primary: 'Genty', sans-serif;
+    --font-secondary: 'Canva Sans', sans-serif;
+    --font-accent: 'TAN Headline', serif;
+}
+
+body {
+    margin: 0;
+    font-family: var(--font-secondary);
+    background-color: var(--secondary-color);
+    color: var(--primary-color);
+}
+
+header {
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+    padding: 1rem;
+    text-align: center;
+}
+
+header img {
+    max-width: 300px;
+    display: block;
+    margin: 0 auto 1rem;
+}
+
+header h1 {
+    font-family: var(--font-accent);
+}
+
+.register-tabs {
+    background-color: var(--secondary-color);
+    text-align: center;
+    padding: 1rem 0;
+    border-bottom: 2px solid var(--primary-color);
+}
+
+.register-tabs a {
+    margin: 0 1rem;
+    text-decoration: none;
+    color: var(--primary-color);
+    font-weight: bold;
+    font-family: var(--font-secondary);
+}
+
+.icon-container {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    margin: 2rem;
+}
+
+.icon {
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+    width: 150px;
+    height: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: var(--font-primary);
+    font-size: 1.2rem;
+    text-align: center;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: transform 0.3s;
+}
+
+.icon:hover {
+    transform: scale(1.1);
+}
+
+#wer-wir-sind {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    justify-content: center;
+    margin: 2rem 0;
+}
+
+.avatar {
+    text-align: center;
+    max-width: 200px;
+}
+
+.avatar img {
+    width: 100%;
+    border-radius: 50%;
+}
+
+.avatar .name {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin: 0.5rem 0;
+}
+
+.avatar .role {
+    font-size: 1.2rem;
+    font-style: italic;
+    margin: 0.5rem 0;
+}
+
+.avatar .description {
+    font-size: 1rem;
+    margin: 0.5rem 0;
+}
+
+footer {
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+    text-align: center;
+    padding: 1rem;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
